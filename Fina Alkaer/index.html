@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fena AlKair</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         .navbar-nav .nav-link {
+            color: #239993 !important;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #176b6a !important;
+        }
+        .navbar-brand img {
+            height: 80px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-brand img:hover {
+            transform: scale(1.05);
+        }
+        .btn-donate {
+            background-color: #239993;
+            border-color: #239993;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
+        .btn-donate:hover {
+            background-color: #176b6a;
+            border-color: #176b6a;
+        }
+        .counter-section {
+            background-color: #04423f;
+            color: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .counter-box {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .counter-box i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .counter-box span {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .counter-box .unit {
+            font-size: 20px;
+            display: block;
+        }
+        .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(3px);
+        z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair" height="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html" style="color: #239993;">About Us</a></li>
+                    
+                    <!-- Dropdown Menu for Ramadan Events -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #239993;">
+                            Ramadan Events
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="iftar.html">Iftar</a></li>
+                            <li><a class="dropdown-item" href="Packages.html">Packages</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item"><a class="nav-link" href="contactUS.html" style="color: #239993;">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: #239993;">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Com.html" style="color: #239993;">Community</a></li>
+                </ul>
+                <!-- Uncomment the donate button if needed -->
+                <!-- <a href="#" class="btn btn-primary ms-3">Donate</a> -->
+            </div>
+        </div>
+    </nav>
+    
+
+    <header class="hero text-white text-center d-flex align-items-center justify-content-center" style="position: relative; height: 50vh; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('ramadan_iftar_meals.jpg') no-repeat center center/cover; filter: blur(1px);"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1 class="display-4 fw-bold">Bringing Communities Together.</h1>
+            <a href="#about" class="btn btn-success btn-lg">Our Mission</a>
+        </div>
+    </header>
+    
+
+    <!-- <section class="text-center py-5">
+        <div class="container">
+            <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair Festival 2025" class="img-fluid mb-3" style="max-height: 350px;">
+            <h2 class="fw-bold" style="color: #239993;">The theme of Fena AlKair Festival 2025 is Connection.</h2>
+            <p class="lead" style="color: #239993;">The word ‘Connection’ is profound and multi-faceted – it is a force that unites people across cultures, environments, and backgrounds, fostering community, empathy, and understanding.</p>
+            <p style="color: #239993;">Through our mission of ‘Bringing Communities Together’ – Fena AlKair believes that true connection – whether rooted in shared experiences, values, or faith; mutual respect can build bridges of solidarity and foster a compassionate world where all can coexist in harmony.</p>
+            <p style="color: #239993;">We help cultivate strong bonds and togetherness by creating inclusive spaces that unite people of all backgrounds. Our core aim is to ‘Turn Strangers Into Friends,’ beautifully reflected through our events and initiatives, inspiring unity and connection.</p>
+            <a href="#more" class="btn btn-success">Read More</a>
+        </div>
+    </section> -->
+
+    <section class="text-center py-5" style="background-color: #f9f9f9;">
+        <div class="container">
+            <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair Festival 2025" class="img-fluid mb-4" style="max-height: 400px; filter: blur(0px);">
+            <h2 class="fw-bold display-3" style="color: #239993;">Fena AlKair Festival 2025:</h2>
+            <p class="lead fs-4" style="color: #239993; max-width: 800px; margin: 0 auto;">The word ‘Connection’ is profound and multi-faceted – it is a force that unites people across cultures, environments, and backgrounds, fostering community, empathy, and understanding.</p>
+            <p class="fs-5 mt-3" style="color: #239993; max-width: 900px; margin: 0 auto;">Through our mission of <strong>‘Bringing Communities Together’</strong> – Fena AlKair believes that true connection – whether rooted in shared experiences, values, or faith; mutual respect can build bridges of solidarity and foster a compassionate world where all can coexist in harmony.</p>
+            <p class="fs-5 mt-3" style="color: #239993; max-width: 900px; margin: 0 auto;">We help cultivate strong bonds and togetherness by creating inclusive spaces that unite people of all backgrounds. Our core aim is to <strong>‘Turn Strangers Into Friends’</strong>, beautifully reflected through our events and initiatives, inspiring unity and connection.</p>
+            <a href="#more" class="btn btn-lg btn-success mt-4 px-5 py-3">Read More</a>
+        </div>
+    </section>
+
+    <section class="text-center py-5" style="background-color: #239693; color: white;">
+        <div class="container">
+            <h2 class="fw-bold">Fena AlKair Festival 2025 Returns</h2>
+            <div class="row mt-4">
+                <div class="col-md-3" >
+                    <a href="event1.html"><img src="DALL·E 2025-03-17 13.53.28 - A modern and minimalist logo for 'Open Iftar'. The logo features a simple white tent icon above the text 'OPEN IFTAR' in a sleek, elegant font. The ba.webp" alt="Open Iftar" class="img-fluid"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="event2.html"><img src="DALL·E 2025-03-17 13.03.06 - A simple and modern logo for a charity collecting clothes in Jordan. The logo features a minimalist design with a heart-shaped hanger symbolizing love.webp" alt="Welcome Ramadan Conference" class="img-fluid"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="event3.html"><img src="DALL·E 2025-03-17 13.04.41 - A simple and modern logo for a charity distributing packages to poor people. The logo features a minimalist design with a hand offering a package, sym.webp" alt="Fast A Day" class="img-fluid"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="event4.html"><img src="DALL·E 2025-03-17 13.06.34 - A heartwarming and simple illustration of people eating Iftar together in Jordan during Ramadan. The scene features a diverse group of people sitting .webp" alt="Ramadan Run Club" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold" style="color: #239993;">Let's go back to the beginning...</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="Artboard-44.png" alt="History Image 1" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="Artboard-45.png" alt="History Image 2" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="Artboard-46.png" alt="History Image 3" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <p class="mt-4" style="color: #239993; font-size: 2vh;">It all started in 2013 when a group of students came together and invited international students,
+                who were living alone, to join in the spirit of Ramadan through breaking their fasts together.
+                The purpose? To provide a home away from home and embody the beauty of our faith.</p>
+            <a href="#our-story" class="btn btn-success ms-3">Read Our Story</a>
+        </div>
+    </section>
+    <section class="counter-section">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Our Reach So Far...</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="fas fa-users"></i>
+                        <span class="display-counter" data-value="1">1M+</span>
+                        <span class="unit">People Connected</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="fas fa-globe"></i>
+                        <span class="display-counter" data-value="650">650K+</span>
+                        <span class="unit">Across The Globe</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="fas fa-utensils"></i>
+                        <span class="display-counter" data-value="500000">500,000+</span>
+                        <span class="unit">Meals Distributed</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="fas fa-hands-helping"></i>
+                        <span class="display-counter" data-value="5000">5000+</span>
+                        <span class="unit">Volunteers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <footer class="footer py-5" style="background-color: #333; color: white;">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact Info -->
+                <div class="col-md-3 text-center text-md-start">
+                    <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair Logo" style="max-width: 150px;">
+                    <h5 class="mt-3">Fena AlKair</h5>
+                    <p>International House<br>Irbid, Jordan</p>
+                    <p>Email: <a href="mailto:FenaAlkair@gmail.com" style="color: white;">FenaAlkair@gmail.com</a></p>
+                </div>
+    
+                <!-- Footer Links -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">ABOUT US</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="aboutUs.html" style="color: white;">Who We Are</a></li>
+                                <li><a href="aboutUs.html" style="color: white;">Our Mission</a></li>
+                                <li><a href="aboutUs.html" style="color: white;">Our Team</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Ramadan Events -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">RAMADAN EVENTS</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="iftar.html" style="color: white;">Iftar</a></li>
+                                <li><a href="Packages.html" style="color: white;">Charity Packages</a></li>
+                            </ul>
+                        </div>
+    
+                       
+    
+                        <!-- Community & Resources -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">COMMUNITY</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="Com.html" style="color: white;">Join the Community</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Contact Us -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">CONTACT US</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="ContactUs.html" style="color: white;">Get in Touch</a></li>
+                                <li><a href="login.html" style="color: white;">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4">
+                <p>&copy; Fena AlKair, 2025. All Rights Reserved.</p>
+                <a href="#" style="color: white;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
