@@ -1,6 +1,5 @@
 const images = [
     "WhatsApp Image 2025-03-17 at 14.58.19.jpeg"
-  
   ];
   
   let currentIndex = 0;

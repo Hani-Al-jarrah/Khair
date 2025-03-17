@@ -1,37 +1,157 @@
-.HeaderImg {
+img {
+    max-width: 100%;
     width: 100%;
-    height: 90vh;
-    background-image: 
-                      url("https://www.ramadantentproject.com/wp-content/uploads/2024/02/Asset-2-e1707435579516.png");
-    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    /* background: url(https://images.unsplash.com/photo-1485069203392-8e1aeb1ebf02?auto=format&fit=crop&w=1054&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) center no-repeat; */
+    -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
 
-.bg {
-    height: 90vh;
-    background-color: rgb(35, 150, 147) !important;
-    padding-top: 20px;
+.wrap:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #239693;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
-.HeaderImg p {
-    color: white;
-    font-size: 6vw;
+.slider {
+    position: relative;
+    z-index: 200;
+    padding: 0 0px;
+    margin: 5rem auto;
+    max-width: 800px;
+    width: 100%;
 }
 
-.custom-btn {
-    background-color: rgb(35, 150, 147) !important;
-    border-color: rgb(35, 150, 147) !important;
-    color: white !important;
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: monospace;
+    font-size: 5rem;
+    z-index: 300;
+    outline: none;
 }
-.custom-btn:hover {
-    background-color: rgb(30, 130, 127) !important;
-    border-color: rgb(30, 130, 127) !important;
+
+.slick-prev {
+    left: -50px;
+    text-align: left;
 }
-.custom-form {
-    margin-top: 130px;
-    border: 2px solid rgb(35, 150, 147) ;
+
+.slick-next {
+    right: -50px;
+    text-align: right;
+}
+
+
+
+.item.slick-slide {
+    width: 400px;
+    height: 400px !important;
+    transition: transform .4s;
+    position: relative;
+}
+
+.slick-slide:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .4s;
+}
+
+.item.slick-slide {
+    transform: scale(0.7) translate(640px);
+}
+
+.item.slick-slide.slick-center+.slick-slide {
+    transform: scale(0.8) translate(-250px);
+    z-index: 10;
+}
+
+.item.slick-slide.slick-center+.slick-slide+.item.slick-slide {
+    transform: scale(0.7) translate(-640px);
+    z-index: 5;
+}
+
+.item.slick-slide.slick-active {
+    transform: scale(0.8) translate(250px);
+}
+
+.item.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    transform: scale(1);
+    z-index: 30;
+}
+
+.slick-center:after {
+    opacity: 0;
+}
+
+.slick-center div {
+    transition: none;
+}
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 40px;
+}
+.event-card {
     border-radius: 10px;
-    padding: 20px;
-    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+}
+.event-img {
+    height: 250px;
+    object-fit: cover;
+}
+.btn-custom {
+    background-color: #239693;
+    color: white;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #1a756e;
+}
+.header-title {
+    text-align: center;
+    color: #239693;
+    font-weight: bold;
 }

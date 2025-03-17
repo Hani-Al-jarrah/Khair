@@ -13,7 +13,7 @@ body {
     font-family: "Poppins", sans-serif;
     overflow: hidden;
     height: 100vh;
-    background: url("");
+    background: url("Ramadan-1000x667.jpg");
     background-size: cover;
     opacity: 1.2;
 
@@ -235,7 +235,7 @@ input {
 }
 
 .overlay {
-    background-image: url('/Ramadan-1000x667.jpg');
+    background-image: url('Ramadan-1000x667.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
