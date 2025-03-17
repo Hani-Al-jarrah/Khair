@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 450px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.avatar {
+    font-size: 120px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+}
+
+strong {
+    color: #333;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.close {
+    font-size: 28px;
+    cursor: pointer;
+    align-self: flex-end;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+   
+}
+
+.donation-history {
+    margin-top: 20px;
+}
+
+.donation-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.donation-history th,
+.donation-history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.donation-history th {
+    background-color: #f4f4f4;
+}

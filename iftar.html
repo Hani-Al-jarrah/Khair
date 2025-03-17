@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="iftar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script></head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair" height="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html" style="color: #239993;">About Us</a></li>
+                    
+                    <!-- Dropdown Menu for Ramadan Events -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #239993;">
+                            Ramadan Events
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="iftar.html">Iftar</a></li>
+                            <li><a class="dropdown-item" href="Packages.html">Packages</a></li>
+                            <li><a class="dropdown-item" href="Events.html">Events</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item"><a class="nav-link" href="contactUS.html" style="color: #239993;">Contact Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: #239993;">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Com.html" style="color: #239993;">Community</a></li>
+                </ul>
+                <!-- Uncomment the donate button if needed -->
+                <!-- <a href="#" class="btn btn-primary ms-3">Donate</a> -->
+            </div>
+        </div>
+    </nav>
+    
+    <div class="HeaderImg d-flex justify-content-center align-items-center">
+        <p>Iftar Ramadan</p>
+    </div>
+    <div class="container-fluid p-5" style="background-color: #239693; color: white;">
+        <div class="row">
+            <div class="col-md-8 d-flex justify-content-center flex-column">
+                <h3>Mawa’ed Al-Rahman</h3>
+                <h5>is a charitable initiative held during the holy month of Ramadan, </h5>
+                <p>where free Iftar
+                    meals are provided to fasting individuals, especially those in need and travelers. The program can
+                    be
+                    organized by charities, mosques, or individuals who wish to spread kindness and generosity during
+                    this
+                    blessed month.
+
+                    Our initiative includes contributions from Tkiyet Um Ali and the Crown Prince Foundation, supporting
+                    our
+                    mission to provide meals and assistance to those in need, ensuring that everyone can experience the
+                    spirit of Ramadan with dignity and compassion.
+                </p>
+
+            </div>
+            <div class="col-md-4">
+
+                <img src="https://media.egypttelegraph.com/2025/2/large/17271688824056202502191055365536.jpg"
+                    class="w-100">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid p-5">
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <img src="https://media.egypttelegraph.com/2025/2/large/17271688824056202502191055365536.jpg"
+                    class="w-100">
+            </div>
+
+            <div class="col-md-8 d-flex justify-content-center flex-column">
+                <h3>Iftar for Orphans</h3>
+                <h5>is a charitable initiative held during the holy month of Ramadan,</h5>
+                <p> where special Iftar meals are provided to orphaned children, offering them a warm and caring
+                    environment to break their fast. The program can be organized by charities, mosques, or individuals
+                    who wish to spread kindness and generosity during this blessed month.
+
+                    Our initiative includes contributions from Tkiyet Um Ali, Yarmouk University and the Crown Prince Foundation, supporting
+                    our mission to bring joy and togetherness to orphans, ensuring they experience the spirit of Ramadan
+                    with love, dignity, and compassion.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="donationForm" class="custom-form shadow">
+                        <h3 class="text-center text-dark mb-4">Join Event</h3>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Donation" class="form-label">Donation type</label>
+                            <select id="Donation" class="form-select" required>
+                              <option value="Mawa’ed Al-Rahman">Mawa’ed Al-Rahman</option>
+                              <option value="Iftar for Orphans">Iftar for Orphans</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="meals" class="form-label">Meals</label><br>
+                            <span style="font-size: smaller;">The meal is for one person and costs $5.<br> Please enter the number of meals:</span>
+                            <input type="number" class="form-control" id="meals" placeholder="Enter number of meals" required>
+                        </div>
+                        
+
+                        
+                        <button type="submit" class="btn custom-btn w-100">donate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer py-5" style="background-color: #333; color: white;">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Contact Info -->
+                <div class="col-md-3 text-center text-md-start">
+                    <img src="Fena_Alkhair-Photoroom.png" alt="Fena AlKair Logo" style="max-width: 150px;">
+                    <h5 class="mt-3">Fena AlKair</h5>
+                    <p>International House<br>Irbid, Jordan</p>
+                    <p>Email: <a href="mailto:FenaAlkair@gmail.com" style="color: white;">FenaAlkair@gmail.com</a></p>
+                </div>
+    
+                <!-- Footer Links -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">ABOUT US</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="aboutUs.html" style="color: white;">Who We Are</a></li>
+                                <li><a href="aboutUs.html" style="color: white;">Our Mission</a></li>
+                                <li><a href="aboutUs.html" style="color: white;">Our Team</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Ramadan Events -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">RAMADAN EVENTS</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="iftar.html" style="color: white;">Iftar</a></li>
+                                <li><a href="Packages.html" style="color: white;">Charity Packages</a></li>
+                            </ul>
+                        </div>
+    
+                       
+    
+                        <!-- Community & Resources -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">COMMUNITY</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="Com.html" style="color: white;">Join the Community</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Contact Us -->
+                        <div class="col-md-2">
+                            <h6 class="fw-bold">CONTACT US</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="ContactUs.html" style="color: white;">Get in Touch</a></li>
+                                <li><a href="login.html" style="color: white;">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4">
+                <p>&copy; Fena AlKair, 2025. All Rights Reserved.</p>
+                <a href="#" style="color: white;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="iftar.js"></script>
+</body>
+
+</html>
