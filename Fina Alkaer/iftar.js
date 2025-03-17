@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".custom-form");
     const nameInput = document.getElementById("name");
